@@ -1,0 +1,592 @@
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.desktop .rectangle {
+  width: 1920px;
+  height: 59px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.desktop .rectangle-2 {
+  width: 1920px;
+  height: 61px;
+  top: 1019px;
+  left: 0;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.desktop .side-bar {
+  position: absolute;
+  width: 100px;
+  height: 960px;
+  top: 59px;
+  left: 0;
+  background-color: #a3a3a3;
+}
+
+.desktop .upload-source-code {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 121px;
+  left: 15px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .upload {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: 15px;
+  left: 15px;
+}
+
+.desktop .notifications-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 788px;
+  left: 15px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .overlap-group {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  top: 18px;
+  left: 18px;
+  background-image: url(./img/bell.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .red-dot {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  left: 20px;
+  background-color: #ff0000;
+  border-radius: 5.5px;
+}
+
+.desktop .help-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 871px;
+  left: 15px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .help-circle {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 12px;
+  left: 13px;
+}
+
+.desktop .add-project-button {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 26px;
+  left: 15px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .plus {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 8px;
+  left: 8px;
+}
+
+.desktop .search-project {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 216px;
+  left: 15px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .search {
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  top: 16px;
+  left: 16px;
+}
+
+.desktop .profile {
+  position: absolute;
+  width: 72px;
+  height: 93px;
+  top: 682px;
+  left: 15px;
+}
+
+.desktop .element-images-avatar {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  border-radius: 35px;
+  overflow: hidden;
+  border: 2px solid;
+  border-color: var(--border-subtle);
+}
+
+.desktop .intersect {
+  position: absolute;
+  width: 52px;
+  height: 55px;
+  top: 13px;
+  left: 7px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 47px;
+  top: 73px;
+  left: 11px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .overlap {
+  position: absolute;
+  width: 1820px;
+  height: 530px;
+  top: 489px;
+  left: 100px;
+  background-color: #bababa;
+}
+
+.desktop .rectangle-3 {
+  width: 871px;
+  height: 496px;
+  top: 21px;
+  left: 22px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.desktop .rectangle-4 {
+  width: 877px;
+  height: 496px;
+  top: 21px;
+  left: 915px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.desktop .projects-section {
+  position: absolute;
+  width: 1888px;
+  height: 430px;
+  top: 59px;
+  left: 100px;
+}
+
+.desktop .overlap-2 {
+  position: relative;
+  width: 1890px;
+  height: 430px;
+}
+
+.desktop .backgroung {
+  position: absolute;
+  width: 1820px;
+  height: 430px;
+  top: 0;
+  left: 0;
+  background-color: #8a8a8a;
+}
+
+.desktop .project {
+  top: 30px;
+  left: 42px;
+  position: absolute;
+  width: 417px;
+  height: 370px;
+}
+
+.desktop .overlap-3 {
+  position: relative;
+  width: 415px;
+  height: 370px;
+  background-color: #d9d9d9;
+  border-radius: 35px;
+}
+
+.desktop .scan-now-button {
+  position: absolute;
+  width: 149px;
+  height: 36px;
+  top: 308px;
+  left: 101px;
+}
+
+.desktop .div-wrapper {
+  position: relative;
+  width: 147px;
+  height: 36px;
+  background-color: #285de7;
+  border-radius: 10px;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 7px;
+  left: 30px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .settings-button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 304px;
+  left: 268px;
+  background-color: #285de7;
+  border-radius: 22.5px;
+}
+
+.desktop .settings {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 7px;
+  left: 7px;
+}
+
+.desktop .repo-info {
+  position: absolute;
+  width: 227px;
+  height: 28px;
+  top: 63px;
+  left: 23px;
+}
+
+.desktop .p {
+  position: absolute;
+  top: 6px;
+  left: 24px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .span {
+  color: #000000;
+}
+
+.desktop .text-wrapper-3 {
+  color: #285de7;
+}
+
+.desktop .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.desktop .last-scan-info {
+  position: absolute;
+  width: 247px;
+  height: 24px;
+  top: 261px;
+  left: 23px;
+}
+
+.desktop .overlap-4 {
+  position: relative;
+  width: 245px;
+  height: 24px;
+}
+
+.desktop .last-scanned-nov {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-4 {
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.desktop .text-wrapper-5 {
+  font-size: 16px;
+}
+
+.desktop .commit-info {
+  position: absolute;
+  width: 290px;
+  height: 24px;
+  top: 99px;
+  left: 23px;
+}
+
+.desktop .commit {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .check-circle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 264px;
+}
+
+.desktop .historic-vulns {
+  position: absolute;
+  width: 277px;
+  height: 34px;
+  top: 126px;
+  left: 23px;
+}
+
+.desktop .element-vulnerabilities {
+  position: absolute;
+  top: 0;
+  left: 78px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-6 {
+  font-weight: 600;
+  color: #000000;
+}
+
+.desktop .text-wrapper-7 {
+  font-weight: 500;
+  color: #000000;
+  font-size: 18px;
+}
+
+.desktop .text-wrapper-8 {
+  font-weight: 500;
+  color: #535353;
+  font-size: 10px;
+}
+
+.desktop .text-wrapper-9 {
+  position: absolute;
+  top: 6px;
+  left: 27px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .shield-off {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 5px;
+  left: 0;
+}
+
+.desktop .action-section {
+  position: absolute;
+  width: 373px;
+  height: 79px;
+  top: 176px;
+  left: 23px;
+}
+
+.desktop .overlap-5 {
+  position: relative;
+  width: 369px;
+  height: 79px;
+  background-color: #a2a2a2;
+  border-radius: 15px;
+}
+
+.desktop .text-wrapper-10 {
+  position: absolute;
+  top: 47px;
+  left: 100px;
+  font-family: "Inter", Helvetica;
+  font-weight: 300;
+  color: #242424;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-12 {
+  position: absolute;
+  top: 15px;
+  left: 133px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .overlap-wrapper {
+  top: 30px;
+  left: 519px;
+  position: absolute;
+  width: 417px;
+  height: 370px;
+}
+
+.desktop .repo-info-2 {
+  position: absolute;
+  width: 202px;
+  height: 28px;
+  top: 63px;
+  left: 23px;
+}
+
+.desktop .overlap-group-wrapper {
+  position: absolute;
+  width: 244px;
+  height: 24px;
+  top: 261px;
+  left: 23px;
+}
+
+.desktop .overlap-6 {
+  position: relative;
+  width: 242px;
+  height: 24px;
+}
+
+.desktop .commit-info-2 {
+  position: absolute;
+  width: 294px;
+  height: 24px;
+  top: 99px;
+  left: 23px;
+}
+
+.desktop .check-circle-2 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 268px;
+}
+
+.desktop .historic-vulns-2 {
+  position: absolute;
+  width: 278px;
+  height: 34px;
+  top: 126px;
+  left: 23px;
+}
+
+.desktop .text-wrapper-13 {
+  position: absolute;
+  top: 15px;
+  left: 152px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .project-2 {
+  top: 29px;
+  left: 996px;
+  position: absolute;
+  width: 417px;
+  height: 370px;
+}
+
+.desktop .project-3 {
+  top: 30px;
+  left: 1473px;
+  position: absolute;
+  width: 417px;
+  height: 370px;
+}

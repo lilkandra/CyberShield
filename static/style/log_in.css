@@ -1,0 +1,63 @@
+
+    .login-container {
+        background-color: #a9473e;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        margin: 100px 570px;
+    }
+
+    .login-container h2 {
+        color: #1E1E1E;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #1E1E1E;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #1E1E1E;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group button {
+        background-color: #1E1E1E;
+        color: #a9473e;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #2f2d2d;
+    }
+
+    .form-group .error-message {
+        color: #ff0000;
+        margin-top: 5px;
+    }
+
+    .bottom-text {
+        margin-top: 20px;
+        color:  #1E1E1E;
+    }
+
+    .bottom-text a {
+        color: #1E1E1E;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .bottom-text a:hover {
+        color: #514a4a;
+    }
