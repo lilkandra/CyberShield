@@ -1,5 +1,5 @@
 .desktop {
-  background-color: #ffffff;
+  background-color: #1E1E1E;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,10 +7,10 @@
 }
 
 .desktop .div {
-  background-color: #ffffff;
+  background-color: #1E1E1E;
   overflow: hidden;
-  width: 1920px;
-  height: 1080px;
+  width: 1500px;
+  height: 740px;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #d9d9d9;
+  background-color: #1E1E1E;
 }
 
 .desktop .rectangle-2 {
@@ -29,7 +29,7 @@
   top: 1019px;
   left: 0;
   position: absolute;
-  background-color: #d9d9d9;
+  background-color: #1E1E1E;
 }
 
 .desktop .side-bar {
@@ -38,7 +38,7 @@
   height: 960px;
   top: 59px;
   left: 0;
-  background-color: #a3a3a3;
+  background-color: #a9473e;
 }
 
 .desktop .upload-source-code {
@@ -215,21 +215,21 @@
 
 .desktop .projects-section {
   position: absolute;
-  width: 1888px;
-  height: 430px;
+  width: 1500px;
+  height: 380px;
   top: 59px;
   left: 100px;
 }
 
 .desktop .overlap-2 {
   position: relative;
-  width: 1890px;
+  width: 1500px;
   height: 430px;
 }
 
 .desktop .backgroung {
   position: absolute;
-  width: 1820px;
+  width: 1500px;
   height: 430px;
   top: 0;
   left: 0;

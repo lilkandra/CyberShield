@@ -2,6 +2,9 @@
 <head>
   <link rel="stylesheet" href="../static/style/dashboard.css?{% now "U" %}">
   <script src="https://kit.fontawesome.com/ddfdcacb4c.js" crossorigin="anonymous"></script>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
 </head>
 <body>
   <div class="dashboard_container">
@@ -32,22 +35,204 @@
       
     </div>
     <div class="dashboard_content">
-      <div class="project_card">
-        <div class="project_details">
-          <h1>LILBET</h1>
+      <div class="content_container">
+      <div class="scrollable_container">
+      <div class="row">
+        <div class="col-12 project_container">
+          <div class="project_card">
+              <div class="project_title">
+                GoSnake
+              </div>
+              <div class="github">
+                <i class="fa-brands fa-github"></i>
+                <a href="#">ahmed-tabib/gosnake</a>
+              </div>
+              <div class="commit">
+                <i class="fa-solid fa-code-commit"></i>
+                <p>commit</p>
+                <a href="#">5f68e2f3 </a>
+                <p > scanned</p>
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="vuln">
+                <i class="fa-solid fa-shield"></i>
+                <h5 style="margin-left: 50px;">9</h5>
+                <p>vulnerabilities found since first scan</p>
+              </div>
+              <div class="status">
+                <h4>No Vulnerabilities Detected!</h4>
+                <p>No action needed</p>
+              </div>
+              <div class="last_scan">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>last scanned Nov 23rd 2023</p>
+              </div>
+              <div class="project_btns">
+                <button>Scan Now</button>
+                <a href="#"><i class="fa-solid fa-gear" ></i></a>
+              </div>
+          </div>
+          <div class="project_card">
+              <div class="project_title">
+                LILBET
+              </div>
+              <div class="github">
+                <i class="fa-brands fa-github"></i>
+                <a href="#">lilkandra/projects/lilbet</a>
+              </div>
+              <div class="commit">
+                <i class="fa-solid fa-code-commit"></i>
+                <p>commit</p>
+                <a href="#">5e18f2e3 </a>
+                <p > scanned</p>
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="vuln">
+                <i class="fa-solid fa-shield"></i>
+                <h5 style="margin-left: 50px;">0</h5>
+                <p>vulnerabilities found since first scan</p>
+              </div>
+              <div class="status">
+                <h4>No Vulnerabilities Detected!</h4>
+                <p>No action needed</p>
+              </div>
+              <div class="last_scan">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>last scanned Oct 16th 2023</p>
+              </div>
+              <div class="project_btns">
+                <button>Scan Now</button>
+                <a href="#"><i class="fa-solid fa-gear" ></i></a>
+              </div>
+          </div>
+          <div class="project_card">
+              <div class="project_title">
+                GoSnake
+              </div>
+              <div class="github">
+                <i class="fa-brands fa-github"></i>
+                <a href="#">ahmed-tabib/gosnake</a>
+              </div>
+              <div class="commit">
+                <i class="fa-solid fa-code-commit"></i>
+                <p>commit</p>
+                <a href="#">5f68e2f3 </a>
+                <p > scanned</p>
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="vuln">
+                <i class="fa-solid fa-shield"></i>
+                <h5 style="margin-left: 50px;">9</h5>
+                <p>vulnerabilities found since first scan</p>
+              </div>
+              <div class="status">
+                <h4>No Vulnerabilities Detected!</h4>
+                <p>No action needed</p>
+              </div>
+              <div class="last_scan">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>last scanned Nov 23rd 2023</p>
+              </div>
+              <div class="project_btns">
+                <button>Scan Now</button>
+                <a href="#"><i class="fa-solid fa-gear" ></i></a>
+              </div>
+          </div>
+          <div class="project_card">
+              <div class="project_title">
+                GoSnake
+              </div>
+              <div class="github">
+                <i class="fa-brands fa-github"></i>
+                <a href="#">ahmed-tabib/gosnake</a>
+              </div>
+              <div class="commit">
+                <i class="fa-solid fa-code-commit"></i>
+                <p>commit</p>
+                <a href="#">5f68e2f3 </a>
+                <p > scanned</p>
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="vuln">
+                <i class="fa-solid fa-shield"></i>
+                <h5 style="margin-left: 50px;">9</h5>
+                <p>vulnerabilities found since first scan</p>
+              </div>
+              <div class="status">
+                <h4>No Vulnerabilities Detected!</h4>
+                <p>No action needed</p>
+              </div>
+              <div class="last_scan">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>last scanned Nov 23rd 2023</p>
+              </div>
+              <div class="project_btns">
+                <button>Scan Now</button>
+                <a href="#"><i class="fa-solid fa-gear" ></i></a>
+              </div>
+          </div>
+          <div class="project_card">
+            <div class="project_title">
+              LILBET
+            </div>
+            <div class="github">
+              <i class="fa-brands fa-github"></i>
+              <a href="#">lilkandra/projects/lilbet</a>
+            </div>
+            <div class="commit">
+              <i class="fa-solid fa-code-commit"></i>
+              <p>commit</p>
+              <a href="#">5e18f2e3 </a>
+              <p > scanned</p>
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <div class="vuln">
+              <i class="fa-solid fa-shield"></i>
+              <h5 style="margin-left: 50px;">0</h5>
+              <p>vulnerabilities found since first scan</p>
+            </div>
+            <div class="status">
+              <h4>No Vulnerabilities Detected!</h4>
+              <p>No action needed</p>
+            </div>
+            <div class="last_scan">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>last scanned Oct 16th 2023</p>
+            </div>
+            <div class="project_btns">
+              <button>Scan Now</button>
+              <a href="#"><i class="fa-solid fa-gear" ></i></a>
+            </div>
         </div>
-
+        </div>
       </div>
+      </div>
+      </div>
+      
   
       <!-- Add more project cards as needed -->
   
     </div>
   </div>
   </div>
-    <!-- Your main content goes here -->
-    <div style="margin-left: 80px; padding: 20px;">
-      <!-- Your main content goes here -->
+  <div class="bottom_section">
+    <div class="history_container">
+      <div class="project_title">Scan History</div>
     </div>
+    <div class="upload_container">
+      <div class="add_project"><h5>Add Project</h5><i class="fa-brands fa-github"></i></div>
+      
+        <input placeholder="Repository link">
+        <input placeholder="Token">
+        <button>Add Project</button>
+        <div class="upload_src"><h5>Upload Source Code</h5><i class="fa-solid fa-upload"></i></div>
+        <div class="dd_browse">
+          <div>Drag & Drop Here</div>
+          <div>or</div>
+          <div class="browse_btn">Browse</div>
+        </div>
+    </div>
+  </div>
   
 </body>
 

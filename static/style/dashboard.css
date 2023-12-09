@@ -3,17 +3,17 @@ body {
   padding: 0;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background: #1E1E1E;
+  overflow: hidden;
 }
 .dashboard_container {
     display: flex;
-    
-
+    background: #1E1E1E;
 }
 
 #sidebar {
-    height: 100vh;
+    height: 100%;
     width: 80px;
-    background-color: #333;
+    background-color: #393939;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,89 +43,203 @@ body {
 
   .dashboard_content {
     display: flex;
-    
+    margin-left: 60px;
     padding: 20px;
+    height: 100%;
   }
-  
-  .project_card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .project_card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project_image {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .project_image img {
+  .content_container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
   }
   
-  .project_details {
-    flex: 1;
-  }
   
-  .project_details h2 {
-    color: #333;
-  }
-  
-  .project_details p {
-    color: #666;
-  }
-  
-  .learn-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
+
   .project_container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: white;
+    
   }
-
+  
   .project_card {
+    background-color: #393939;
     display: flex;
     flex-direction: column;
+    
     align-items: center;
-    margin: 20px 100px;
-    padding: 20px;
-    width: 415px;
-    height:370px;
+    margin: 0 20px; /* Adjust margin as needed */
+    padding: 5px;
+    width: 340px;
+    height: 310px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #393939;
+  }
+  
+  .project_title {
+    font-size: 27px;
+    color: #ffffff;
+  }
+
+  .github {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+  }
+  .project_card a {
+    color: #a9473e;
+  }
+  .project_card i  {
+    padding: 4px;
+  }
+  .commit {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+  }
+  .commit p {
+    margin: 0 4px;
+  }
+  .vuln {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  .vuln p {
+    font-size: 10px;
+    padding: 8px 5px;
+    margin-bottom: 0;
+  }
+  .status {
+    border-radius: 15px;
+    background-color:#1E1E1E;
+    color: #fff;
+    padding: 7px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  .last_scan {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  .project_btns {
+    display: flex;
+    align-items: center;
+  }
+  .project_btns button {
+    background-color: #a9473e;
+    width: 120px;
+    height: 30px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(52, 2, 2, 0.2);
+    border: none;
+    color: #fff;
+    margin: 0 10px;
+    padding-bottom: 2px;
+  }
+  .project_btns a {
+    background-color: #a9473e;
+    border-radius: 40px;
+    padding: 3px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .project_btns i {
+    font-size: 20px;
+  }
+  .project_btns i:hover {
+    color: #fff;
+  }
+  .bottom_section {
+    width: 110%;
+    height: 100%;
+    background-color:#1E1E1E ;
+    display: flex;
+  }
+  .history_container {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 100px;
+    background-color: #393939;
+    justify-content: center;
+    height: 370px;
+    width: 660px;
+  }
+  .upload_container {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 15px;
+    background-color: #393939;
+    justify-content: center;
+    flex-direction: column;
+    height: 370px;
+    width: 680px;
+  }
+  .add_project {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+  }
+  .upload_container i {
+    padding: 6px;
+  }
+  .upload_container input {
+    margin: 7px 50px;
+    border-radius: 5px;
+    padding: 2px 7px;
+
+    border: #1E1E1E solid 1px;
+  }
+  .upload_container button {
+    background-color: #a9473e;
+    width: 130px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    margin: 15px auto;
+    padding-bottom: 2px;
+  }
+  .upload_src {
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    align-self: flex-start;
+  }
+  .dd_browse {
+    display: flex;
+    color:#1E1E1E;
+    background-color: #fff;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 200px;
+    border-radius: 20px;
+  }
+  .browse_btn {
+    background-color: #a9473e;
+    width: 100px;
+    height: 22px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    padding-left: 25px;
   }
 
   
 
-  .project_card h2 {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-  }

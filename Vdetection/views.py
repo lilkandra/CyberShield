@@ -60,5 +60,5 @@ def help(request):
     return render(request, 'help.html')
 
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    return render(request, 'dashboard1.html')
 
