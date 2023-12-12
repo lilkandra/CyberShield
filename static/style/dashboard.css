@@ -196,7 +196,7 @@ body {
     padding: 6px;
   }
   .upload_container input {
-    margin: 7px 50px;
+    margin: 5px 50px;
     border-radius: 5px;
     padding: 2px 7px;
 
@@ -209,7 +209,7 @@ body {
     border-radius: 10px;
     border: none;
     color: #fff;
-    margin: 15px auto;
+    margin: 10px auto;
     padding-bottom: 2px;
   }
   .upload_src {
@@ -226,7 +226,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 200px;
+    margin: 10px 200px;
     border-radius: 20px;
   }
   .browse_btn {
@@ -236,10 +236,49 @@ body {
     border-radius: 10px;
     border: none;
     color: #fff;
-    margin: 10px auto;
+    
     padding-bottom: 10px;
     padding-left: 25px;
   }
+  .your-cool-css-class {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .your-cool-css-class input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .your-cool-css-class span {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #file-name {
+    margin-top: 5px;
+    color: #333;
+  }
+
+  .upload-button {
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
   
 

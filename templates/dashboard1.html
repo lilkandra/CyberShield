@@ -5,6 +5,79 @@
   {% load bootstrap5 %}
   {% bootstrap_css %}
   {% bootstrap_javascript %}
+  <script>
+    
+     // Add this script to handle drag and drop events
+  document.addEventListener('DOMContentLoaded', function () {
+    var dropArea = document.querySelector('.drag-and-drop');
+    var input = document.getElementById('id_file');
+    var output = document.getElementById('file-name');
+    var uploadButton = document.querySelector('.upload-button');
+
+    function showUploadButton() {
+      uploadButton.style.display = 'block';
+    }
+    input.addEventListener('change', function() {
+      updateFileName();
+      showUploadButton();
+    });
+    // Prevent default drag behaviors
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(function (eventName) {
+      dropArea.addEventListener(eventName, preventDefaults, false);
+      document.body.addEventListener(eventName, preventDefaults, false);
+    });
+
+    // Highlight drop area when dragging over it
+    ['dragenter', 'dragover'].forEach(function (eventName) {
+      dropArea.addEventListener(eventName, highlight, false);
+    });
+
+    // Unhighlight drop area when dragging leaves it
+    ['dragleave', 'drop'].forEach(function (eventName) {
+      dropArea.addEventListener(eventName, unhighlight, false);
+    });
+
+    // Handle dropped files
+    dropArea.addEventListener('drop', handleDrop, false);
+
+    function preventDefaults(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    function highlight() {
+      dropArea.classList.add('active');
+    }
+
+    function unhighlight() {
+      dropArea.classList.remove('active');
+    }
+
+    function handleDrop(e) {
+      var dt = e.dataTransfer;
+      var files = dt.files;
+
+      // Handle the dropped files as needed (e.g., display file names)
+      output.innerText = files[0].name;
+
+      // Trigger the file input to handle the file
+      input.files = files;
+      updateFileName();
+      showUploadButton();
+    }
+
+    // Add an event listener to the file input to trigger the updateFileName function
+    
+  });
+
+    // Add this script to handle file selection and update the displayed file name
+    function updateFileName() {
+      var input = document.getElementById('id_file');
+      var output = document.getElementById('file-name');
+      output.innerText = input.files[0].name;
+      
+    }
+  </script>
 </head>
 <body>
   <div class="dashboard_container">
@@ -229,10 +302,23 @@
         <div class="dd_browse">
           <div>Drag & Drop Here</div>
           <div>or</div>
-          <div class="browse_btn">Browse</div>
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label class="your-cool-css-class">
+              <div class="browse_btn">Browse</div>
+                {{ form.file }}
+                
+            </label>
+            <div id="file-name"></div>         
+          
         </div>
+        <button type="submit" id="scan_btn" class="upload-button">Scan</button>
+      </form>
     </div>
   </div>
-  
+  <script>
+    // Add an event listener to the file input to trigger the updateFileName function
+    document.getElementById('id_file').addEventListener('change', updateFileName);
+  </script>
 </body>
 

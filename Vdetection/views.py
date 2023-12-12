@@ -3,7 +3,9 @@ from django.contrib.auth.models import User, auth
 from django.contrib.auth import logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-# Create your views here.
+from .models import Project
+from .forms import UploadFileForm
+
 
 def home(request):
     return render(request, 'home.html')
@@ -59,6 +61,17 @@ def log_out(request):
 def help(request):
     return render(request, 'help.html')
 
+@login_required
 def dashboard(request):
-    return render(request, 'dashboard1.html')
+    if request.method == "POST":
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            project = Project.objects.create(src_code=request.FILES["file"], user=request.user)
+            project.save()
+            return render(request, 'dashboard1.html', {"form": form})
+    else:
+        form = UploadFileForm()
+        project = Project.objects.filter(user=request.user)
+        return render(request, 'dashboard1.html', {"form": form})
+    
 
