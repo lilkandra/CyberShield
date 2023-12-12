@@ -209,7 +209,7 @@ body {
     border-radius: 10px;
     border: none;
     color: #fff;
-    margin: 10px auto;
+    margin: auto;
     padding-bottom: 2px;
   }
   .upload_src {
@@ -273,11 +273,7 @@ body {
 
   .upload-button {
     display: none;
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    
   }
  
   
