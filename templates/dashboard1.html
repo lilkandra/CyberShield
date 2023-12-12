@@ -297,7 +297,28 @@
       
         <input placeholder="Repository link">
         <input placeholder="Token">
-        <button>Add Project</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          Add Project
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title1" id="exampleModalLabel1">Project Added</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body1">
+                Project added successfully 
+              </div>
+              <div class="modal-footer">
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="upload_src"><h5>Upload Source Code</h5><i class="fa-solid fa-upload"></i></div>
         <div class="dd_browse">
           <div>Drag & Drop Here</div>
@@ -312,8 +333,26 @@
             <div id="file-name"></div>         
           
         </div>
-        <button type="submit" id="scan_btn" class="upload-button">Scan</button>
+        <button   type="button" id="scan_btn" class="upload-button" data-bs-toggle="modal" data-bs-target="#exampleModal" >Scan</button>
+        
       </form>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Scan Result</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script>

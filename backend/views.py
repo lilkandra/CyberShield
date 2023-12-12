@@ -73,5 +73,6 @@ def dashboard(request):
         form = UploadFileForm()
         project = Project.objects.filter(user=request.user)
         return render(request, 'dashboard1.html', {"form": form})
+
     
 
